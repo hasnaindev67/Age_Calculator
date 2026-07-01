@@ -22,14 +22,6 @@ Enter your date of birth and watch a real-time counter track:
 - CSS3 — styling, animations, and layout
 - JavaScript (Vanilla) — date calculations and live updates
 
-📁 Project Structure
-
-life-clock/
-├── index.html      # Page structure
-├── style.css        # All styling
-├── script.js         # App logic (calculations, timers, UI states)
-└── README.md
-
 👤 Credit
 
 Powered by M.Hasnain
