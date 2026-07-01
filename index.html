@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Clock — Time Since Birth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="ring"></div>
+    <div class="preload-text">Setting up your life clock…</div>
+  </div>
+
+  <div class="page-content" id="pageContent">
+
+    <div class="eyebrow">Life Clock</div>
+    <h1>You were born, and time never stopped</h1>
+    <div class="sub">Enter your date of birth and watch a live counter track every year, month, day, hour, minute, and second that's passed since then.</div>
+
+    <div class="card">
+      <label class="field-label" for="dob">Date of birth</label>
+      <div class="input-row">
+        <input type="date" id="dob">
+        <button id="calcBtn">
+          <span class="btn-spinner"></span>
+          <span class="btn-label">Calculate</span>
+        </button>
+      </div>
+      <div class="error" id="errMsg">Please enter a valid date in the past.</div>
+
+      <div class="result" id="result">
+        <div class="headline">
+          <span class="num" id="yearsBig">0</span>
+          <span class="lbl">Years old<span class="dot"></span></span>
+        </div>
+
+        <div class="grid">
+          <div class="unit"><div class="v" id="uYears">0</div><div class="k">Years</div></div>
+          <div class="unit"><div class="v" id="uMonths">0</div><div class="k">Months</div></div>
+          <div class="unit"><div class="v" id="uDays">0</div><div class="k">Days</div></div>
+        </div>
+        <div class="grid">
+          <div class="unit"><div class="v" id="uHours">0</div><div class="k">Total Hours</div></div>
+          <div class="unit"><div class="v" id="uMins">0</div><div class="k">Total Minutes</div></div>
+          <div class="unit pulse"><div class="v" id="uSecs">0</div><div class="k">Total Seconds</div></div>
+        </div>
+
+        <div class="footer-note">This counter runs in real time, so keep the tab open and watch it climb.</div>
+      </div>
+    </div>
+
+    <div class="credit">Powered by M.Hasnain</div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
